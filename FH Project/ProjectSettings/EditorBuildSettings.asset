@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Labyrinth_without_outer_walls.unity
+    guid: 509091ef90aba7d4cb79a94fa9e66f3a
   m_configObjects: {}
