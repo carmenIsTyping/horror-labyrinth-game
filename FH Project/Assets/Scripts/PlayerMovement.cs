@@ -17,6 +17,9 @@ public class PlayerMovement : MonoBehaviour
     Vector3 velocity;
     bool isGrounded;
 
+    public AudioSource footsteps;
+    bool isMoving;
+
     // Update is called once per frame
     void Update()
     {
@@ -25,6 +28,17 @@ public class PlayerMovement : MonoBehaviour
         if(isGrounded && velocity.y<0)
         {
             velocity.y = -2f;
+        }
+
+        if(Input.GetAxis("Horizontal")<0|| Input.GetAxis("Vertical") < 0)
+        {
+            isMoving = true;
+            footsteps.Play();
+        }
+        else
+        {
+            isMoving = false;
+            footsteps.Stop();
         }
 
         float x = Input.GetAxis("Horizontal");
