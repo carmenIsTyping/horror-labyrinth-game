@@ -1,0 +1,398 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.0f1 (c7b5465681fb) revision 13088070'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19042.928; Version 2009; 64bit' Language: 'de' Physical Memory: 12269 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+D:\Programme\Unity\2020.3.0f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/BIF02/ITP/Project/Repository/horror-labyrinth-game/FH Project
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+55246
+Successfully changed project path to: D:/BIF02/ITP/Project/Repository/horror-labyrinth-game/FH Project
+D:/BIF02/ITP/Project/Repository/horror-labyrinth-game/FH Project
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 48.58 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.0f1 (c7b5465681fb)
+[Subsystems] Discovering subsystems at path D:/Programme/Unity/2020.3.0f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/BIF02/ITP/Project/Repository/horror-labyrinth-game/FH Project/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Radeon(TM) RX 460 Graphics (ID=0x67ef)
+    Vendor:   
+    VRAM:     4075 MB
+    Driver:   27.20.1034.6
+Initialize mono
+Mono path[0] = 'D:/Programme/Unity/2020.3.0f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Programme/Unity/2020.3.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'D:/Programme/Unity/2020.3.0f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56512
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/Programme/Unity/2020.3.0f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: D:/Programme/Unity/2020.3.0f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002106 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 42.14 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.671 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.003586 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.37 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.403 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 0.37 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1122 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 60.3 MB.
+System memory in use after: 60.4 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1572.
+Total: 2.433400 ms (FindLiveObjects: 0.259900 ms CreateObjectMapping: 0.075400 ms MarkObjects: 1.974600 ms  DeleteObjects: 0.122100 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/DoorPack/Door_with_wall 2.prefab
+  artifactKey: Guid(6a067480e2754eb42bc187d14ea8ade4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DoorPack/Door_with_wall 2.prefab using Guid(6a067480e2754eb42bc187d14ea8ade4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19763683a003025069e628401450cf64') in 0.298358 seconds
+  Import took 0.302559 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000374 seconds.
+  path: Assets/DoorPack/Door.prefab
+  artifactKey: Guid(b67093c6b80395e47b71e4163d3f0441) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DoorPack/Door.prefab using Guid(b67093c6b80395e47b71e4163d3f0441) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4853ff0255398ec85a1dc08f870bc43') in 0.069484 seconds
+  Import took 0.073050 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000325 seconds.
+  path: Assets/DoorPack
+  artifactKey: Guid(dd259ccaf57fa7c40abd2358b217b692) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DoorPack using Guid(dd259ccaf57fa7c40abd2358b217b692) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9effccb63fa46f8718412dd67ef1b057') in 0.015761 seconds
+  Import took 0.018723 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000340 seconds.
+  path: Assets/DoorPack/Single_Door_Model.FBX
+  artifactKey: Guid(c6b026d4f73ef19409feed1391f6868c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DoorPack/Single_Door_Model.FBX using Guid(c6b026d4f73ef19409feed1391f6868c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '446338cc63a56ce32d0af2442ca786c1') in 0.236388 seconds
+  Import took 0.239502 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 25.527865 seconds.
+  path: Assets/DoorPack/Door_with_wall 2.prefab
+  artifactKey: Guid(6a067480e2754eb42bc187d14ea8ade4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DoorPack/Door_with_wall 2.prefab using Guid(6a067480e2754eb42bc187d14ea8ade4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5770c210743597f5b18b34018a29814') in 0.104744 seconds
+  Import took 0.109249 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.149255 seconds.
+  path: Assets/DoorPack/Door_with_wall 2.prefab
+  artifactKey: Guid(6a067480e2754eb42bc187d14ea8ade4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DoorPack/Door_with_wall 2.prefab using Guid(6a067480e2754eb42bc187d14ea8ade4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73fd019d8e7164fbf41f252848a900f9') in 0.101449 seconds
+  Import took 0.105410 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.103845 seconds.
+  path: Assets/DoorPack/Door_with_wall 2.prefab
+  artifactKey: Guid(6a067480e2754eb42bc187d14ea8ade4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DoorPack/Door_with_wall 2.prefab using Guid(6a067480e2754eb42bc187d14ea8ade4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f81a1d6c5fd379f86d5c12157aef027') in 0.072159 seconds
+  Import took 0.076507 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.932377 seconds.
+  path: Assets/DoorPack/Door_with_wall 2.prefab
+  artifactKey: Guid(6a067480e2754eb42bc187d14ea8ade4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DoorPack/Door_with_wall 2.prefab using Guid(6a067480e2754eb42bc187d14ea8ade4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '591d12e1df641dc9a08b7571c56c8e47') in 0.081930 seconds
+  Import took 0.087375 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.556310 seconds.
+  path: Assets/DoorPack/Door_with_wall 2.prefab
+  artifactKey: Guid(6a067480e2754eb42bc187d14ea8ade4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DoorPack/Door_with_wall 2.prefab using Guid(6a067480e2754eb42bc187d14ea8ade4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '009ac28534dc19a959a406c4fd645905') in 0.099646 seconds
+  Import took 0.104188 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.018659 seconds.
+  path: Assets/DoorPack/Door_with_wall 2.prefab
+  artifactKey: Guid(6a067480e2754eb42bc187d14ea8ade4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DoorPack/Door_with_wall 2.prefab using Guid(6a067480e2754eb42bc187d14ea8ade4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a720a324e03328f02dc577f2df924d0') in 0.101379 seconds
+  Import took 0.105569 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.821899 seconds.
+  path: Assets/DoorPack/Door_with_wall 2.prefab
+  artifactKey: Guid(6a067480e2754eb42bc187d14ea8ade4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DoorPack/Door_with_wall 2.prefab using Guid(6a067480e2754eb42bc187d14ea8ade4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3012777b14377c332a217ca31b7d7e3f') in 0.102769 seconds
+  Import took 0.106604 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.170767 seconds.
+  path: Assets/DoorPack/Door_with_wall 2.prefab
+  artifactKey: Guid(6a067480e2754eb42bc187d14ea8ade4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DoorPack/Door_with_wall 2.prefab using Guid(6a067480e2754eb42bc187d14ea8ade4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6c4ff5bc54abda2a8c11000fe308393') in 0.092534 seconds
+  Import took 0.096994 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.136440 seconds.
+  path: Assets/DoorPack/Door_with_wall 2.prefab
+  artifactKey: Guid(6a067480e2754eb42bc187d14ea8ade4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DoorPack/Door_with_wall 2.prefab using Guid(6a067480e2754eb42bc187d14ea8ade4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10ebbe79f71cf42c5d61ddd67be32475') in 0.102273 seconds
+  Import took 0.106798 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 26.222077 seconds.
+  path: Assets/DoorPack/Door_with_wall 2.prefab
+  artifactKey: Guid(6a067480e2754eb42bc187d14ea8ade4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DoorPack/Door_with_wall 2.prefab using Guid(6a067480e2754eb42bc187d14ea8ade4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b273cd600766ec49be8fe494bf5fbc50') in 0.119779 seconds
+  Import took 0.124757 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.297938 seconds.
+  path: Assets/DoorPack/Door_with_wall 2.prefab
+  artifactKey: Guid(6a067480e2754eb42bc187d14ea8ade4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DoorPack/Door_with_wall 2.prefab using Guid(6a067480e2754eb42bc187d14ea8ade4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12f9c4f1989eaae87e27d4f320c08d54') in 0.080549 seconds
+  Import took 0.084921 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.220392 seconds.
+  path: Assets/DoorPack/Door_with_wall 2.prefab
+  artifactKey: Guid(6a067480e2754eb42bc187d14ea8ade4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DoorPack/Door_with_wall 2.prefab using Guid(6a067480e2754eb42bc187d14ea8ade4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '210fe2974a05c5f2e77684e62078b312') in 0.104849 seconds
+  Import took 0.109529 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.795179 seconds.
+  path: Assets/DoorPack/Door_with_wall 2.prefab
+  artifactKey: Guid(6a067480e2754eb42bc187d14ea8ade4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DoorPack/Door_with_wall 2.prefab using Guid(6a067480e2754eb42bc187d14ea8ade4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d346d0d78c71073381a75f0ca4e326a') in 0.091652 seconds
+  Import took 0.096278 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.614312 seconds.
+  path: Assets/DoorPack/Door_with_wall 2.prefab
+  artifactKey: Guid(6a067480e2754eb42bc187d14ea8ade4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DoorPack/Door_with_wall 2.prefab using Guid(6a067480e2754eb42bc187d14ea8ade4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c793a0abb6a26a9d72d3f2bfbb0d2de') in 0.096656 seconds
+  Import took 0.100526 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.117748 seconds.
+  path: Assets/DoorPack/Door_with_wall 2.prefab
+  artifactKey: Guid(6a067480e2754eb42bc187d14ea8ade4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DoorPack/Door_with_wall 2.prefab using Guid(6a067480e2754eb42bc187d14ea8ade4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a280aa00950e78d975daca670fb5955c') in 0.074777 seconds
+  Import took 0.079341 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.350938 seconds.
+  path: Assets/DoorPack/Door_with_wall 2.prefab
+  artifactKey: Guid(6a067480e2754eb42bc187d14ea8ade4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DoorPack/Door_with_wall 2.prefab using Guid(6a067480e2754eb42bc187d14ea8ade4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3034dd471921bd1cfd93829c8e36709') in 0.082893 seconds
+  Import took 0.086949 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.226928 seconds.
+  path: Assets/DoorPack/Door_with_wall 2.prefab
+  artifactKey: Guid(6a067480e2754eb42bc187d14ea8ade4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DoorPack/Door_with_wall 2.prefab using Guid(6a067480e2754eb42bc187d14ea8ade4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b1a86f583f8993ead19eb5b7f8076d8') in 0.110813 seconds
+  Import took 0.114935 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.364075 seconds.
+  path: Assets/DoorPack/Door_with_wall 2.prefab
+  artifactKey: Guid(6a067480e2754eb42bc187d14ea8ade4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DoorPack/Door_with_wall 2.prefab using Guid(6a067480e2754eb42bc187d14ea8ade4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '800dbb7bacecef4a4fcbf5cb8ee3c621') in 0.120523 seconds
+  Import took 0.125122 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.563676 seconds.
+  path: Assets/DoorPack/Door_with_wall 2.prefab
+  artifactKey: Guid(6a067480e2754eb42bc187d14ea8ade4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DoorPack/Door_with_wall 2.prefab using Guid(6a067480e2754eb42bc187d14ea8ade4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ac6e3def9383992d1840a5fa909b893') in 0.099745 seconds
+  Import took 0.104193 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.501339 seconds.
+  path: Assets/DoorPack/Door_with_wall 2.prefab
+  artifactKey: Guid(6a067480e2754eb42bc187d14ea8ade4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DoorPack/Door_with_wall 2.prefab using Guid(6a067480e2754eb42bc187d14ea8ade4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0813ece9ab772f632d5691a33fc98fbd') in 0.070436 seconds
+  Import took 0.074233 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.599647 seconds.
+  path: Assets/DoorPack/Door_with_wall 2.prefab
+  artifactKey: Guid(6a067480e2754eb42bc187d14ea8ade4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DoorPack/Door_with_wall 2.prefab using Guid(6a067480e2754eb42bc187d14ea8ade4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e03f670f1cbe53f514fa997add97c97') in 0.103283 seconds
+  Import took 0.107709 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.928582 seconds.
+  path: Assets/DoorPack/Door_with_wall 2.prefab
+  artifactKey: Guid(6a067480e2754eb42bc187d14ea8ade4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DoorPack/Door_with_wall 2.prefab using Guid(6a067480e2754eb42bc187d14ea8ade4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1d89da92a2f84264b74d6deb7f5a0ac') in 0.104251 seconds
+  Import took 0.108950 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.508174 seconds.
+  path: Assets/DoorPack/Door_with_wall 2.prefab
+  artifactKey: Guid(6a067480e2754eb42bc187d14ea8ade4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DoorPack/Door_with_wall 2.prefab using Guid(6a067480e2754eb42bc187d14ea8ade4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c58c5e1af913e83f0c1c463b0c516c09') in 0.079482 seconds
+  Import took 0.083548 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.710035 seconds.
+  path: Assets/DoorPack/Door_with_wall 2.prefab
+  artifactKey: Guid(6a067480e2754eb42bc187d14ea8ade4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DoorPack/Door_with_wall 2.prefab using Guid(6a067480e2754eb42bc187d14ea8ade4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1dff13dca15e38a2caefe59cd3d7badb') in 0.062897 seconds
+  Import took 0.066792 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.016553 seconds.
+  path: Assets/DoorPack/Door_with_wall 2.prefab
+  artifactKey: Guid(6a067480e2754eb42bc187d14ea8ade4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DoorPack/Door_with_wall 2.prefab using Guid(6a067480e2754eb42bc187d14ea8ade4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4f00bba5421f6fedb24ca77cff1cbf5') in 0.096852 seconds
+  Import took 0.100893 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.779956 seconds.
+  path: Assets/DoorPack/Door_with_wall 2.prefab
+  artifactKey: Guid(6a067480e2754eb42bc187d14ea8ade4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DoorPack/Door_with_wall 2.prefab using Guid(6a067480e2754eb42bc187d14ea8ade4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7b0d6a39ec6d6bfe796ab6abdcf2571') in 0.106834 seconds
+  Import took 0.111520 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.378809 seconds.
+  path: Assets/DoorPack/Door_with_wall 2.prefab
+  artifactKey: Guid(6a067480e2754eb42bc187d14ea8ade4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DoorPack/Door_with_wall 2.prefab using Guid(6a067480e2754eb42bc187d14ea8ade4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bff7b3378c382a3b3d7a8c8055a91be9') in 0.070160 seconds
+  Import took 0.074501 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.341209 seconds.
+  path: Assets/DoorPack/Door_with_wall 2.prefab
+  artifactKey: Guid(6a067480e2754eb42bc187d14ea8ade4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DoorPack/Door_with_wall 2.prefab using Guid(6a067480e2754eb42bc187d14ea8ade4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6dddd9f6964d8d5e86615c8f74501548') in 0.111363 seconds
+  Import took 0.116291 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.338796 seconds.
+  path: Assets/DoorPack/Door_with_wall 2.prefab
+  artifactKey: Guid(6a067480e2754eb42bc187d14ea8ade4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DoorPack/Door_with_wall 2.prefab using Guid(6a067480e2754eb42bc187d14ea8ade4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4b90edf4f1c68d9ba482320ba106759') in 0.084853 seconds
+  Import took 0.089330 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.032314 seconds.
+  path: Assets/DoorPack/Door_with_wall 2.prefab
+  artifactKey: Guid(6a067480e2754eb42bc187d14ea8ade4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DoorPack/Door_with_wall 2.prefab using Guid(6a067480e2754eb42bc187d14ea8ade4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c230326a15cff61a7175850a4abe64ba') in 0.092642 seconds
+  Import took 0.097029 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.600429 seconds.
+  path: Assets/DoorPack/Door_with_wall 2.prefab
+  artifactKey: Guid(6a067480e2754eb42bc187d14ea8ade4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DoorPack/Door_with_wall 2.prefab using Guid(6a067480e2754eb42bc187d14ea8ade4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a52c77d903266abab75b3108a8ab873d') in 0.105427 seconds
+  Import took 0.110543 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.782353 seconds.
+  path: Assets/DoorPack/Door_with_wall 2.prefab
+  artifactKey: Guid(6a067480e2754eb42bc187d14ea8ade4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DoorPack/Door_with_wall 2.prefab using Guid(6a067480e2754eb42bc187d14ea8ade4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b445996b6e28299bde79f13d574405be') in 0.103734 seconds
+  Import took 0.108362 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.691385 seconds.
+  path: Assets/DoorPack/Door_with_wall 2.prefab
+  artifactKey: Guid(6a067480e2754eb42bc187d14ea8ade4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DoorPack/Door_with_wall 2.prefab using Guid(6a067480e2754eb42bc187d14ea8ade4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf11d49d901188cb4572175723a6b805') in 0.073373 seconds
+  Import took 0.077478 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003942 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.38 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.261 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.38 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1116 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 64.0 MB.
+System memory in use after: 64.0 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1619.
+Total: 2.368000 ms (FindLiveObjects: 0.296800 ms CreateObjectMapping: 0.066600 ms MarkObjects: 1.918800 ms  DeleteObjects: 0.082500 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
