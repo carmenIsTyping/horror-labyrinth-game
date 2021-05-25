@@ -30,7 +30,8 @@ public class Item : MonoBehaviour
                 if (hit.collider.CompareTag("collectable"))
                 {
                     inv.AddItem(this.itemName);
-                    Destroy(this.gameObject);
+                    
+                    Destroy(hit.collider.gameObject);
                 }
             }
         }
