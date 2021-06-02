@@ -3,6 +3,8 @@ using UnityEngine.UI;
 
 public class DoorController : MonoBehaviour
 {
+    public bool isOpen = false;
+    public AudioSource creak;
     void Update()
     {
         if (Input.GetButtonDown("Fire1"))
@@ -18,6 +20,10 @@ public class DoorController : MonoBehaviour
                 {
                     var open = hit.collider.transform.GetComponent<Animator>().GetBool("open");
                     hit.collider.transform.GetComponent<Animator>().SetBool("open", !open);
+                    if(isOpen == false)
+                    {
+                        creak.Play();
+                    }
                 }
 
             }
