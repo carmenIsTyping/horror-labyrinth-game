@@ -7,7 +7,6 @@ public class PauseMenu : MonoBehaviour
 {
     public static bool gamePaused = false;
     public GameObject pauseMenuUI;
-    public GameObject crossHair;
 
 
     // Update is called once per frame
@@ -31,7 +30,6 @@ public class PauseMenu : MonoBehaviour
     {
         Debug.Log("Resumed");
         pauseMenuUI.SetActive(false);
-        crossHair.SetActive(true);
         Time.timeScale = 1f;
         gamePaused = false;
         Cursor.lockState = CursorLockMode.Locked;
@@ -41,7 +39,6 @@ public class PauseMenu : MonoBehaviour
     {
         Cursor.lockState = CursorLockMode.None;
         pauseMenuUI.SetActive(true);
-        crossHair.SetActive(false);
         Time.timeScale = 0f;
         gamePaused = true;
     }
