@@ -10,7 +10,7 @@ public class Inventory : MonoBehaviour
     //Inventory shown on screen and title
     void OnGUI()
     {
-        GUI.Box(new Rect(100, 100, 150, 100), inventoryToString());
+        GUI.Box(new Rect(25, 25, 100, 150), inventoryToString());
     }
 
     public int AddItem(string item)

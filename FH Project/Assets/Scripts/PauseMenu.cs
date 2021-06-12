@@ -9,7 +9,6 @@ public class PauseMenu : MonoBehaviour
     public GameObject pauseMenuUI;
     public GameObject crossHair;
 
-
     // Update is called once per frame
     void Update()
     {
@@ -57,4 +56,5 @@ public class PauseMenu : MonoBehaviour
         Debug.Log("Quit!");
         Application.Quit();
     }
+
 }

@@ -9,7 +9,6 @@ public class Flashlight : MonoBehaviour
     public AudioSource clickSound;
     public bool failSafe = false;
 
-   
     // Update is called once per frame
     void Update()
     {

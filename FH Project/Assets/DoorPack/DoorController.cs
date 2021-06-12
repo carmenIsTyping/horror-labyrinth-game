@@ -50,6 +50,11 @@ public class DoorController : MonoBehaviour
             }
         }
     }
+
+    void OpenDoorQuiz()
+    {
+
+    }
 }
 
 
