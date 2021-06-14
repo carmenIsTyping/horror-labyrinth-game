@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class spawnEnemy : MonoBehaviour
 {
-    public Transform Spawnpoint;
-    public GameObject Enemy;
+       public GameObject Enemy;
 
-    // Start is called before the first frame update
-    void OnTriggerEnter(Collider other)
-    {
-        Instantiate(Enemy, Spawnpoint.position, Spawnpoint.rotation);
-        Destroy(Enemy, 60f);
+       void OnTriggerEnter(Collider other)
+       {
+           Enemy.GetComponent<EnemyFollowsPath>().activated = true;
+       }
 
-    }
+    
 
 }

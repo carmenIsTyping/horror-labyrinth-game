@@ -8,16 +8,21 @@ public class EnemyFollowsPath : MonoBehaviour
     public float speed;
     private int current;
 
+    public bool activated = false;
+
     void Update()
     {
-        if(transform.position != target[current].position)
-        {
-            Vector3 pos = Vector3.MoveTowards(transform.position, target[current].position, speed * Time.deltaTime);
-            GetComponent<Rigidbody>().MovePosition(pos);
-        }        
-        else
-        {
-            current = (current + 1) % target.Length;
+        if(activated){
+
+            if(transform.position != target[current].position)
+            {
+                Vector3 pos = Vector3.MoveTowards(transform.position, target[current].position, speed * Time.deltaTime);
+                GetComponent<Rigidbody>().MovePosition(pos);
+            }        
+            else
+            {
+                current = (current + 1) % target.Length;
+            }
         }
     }
 }
