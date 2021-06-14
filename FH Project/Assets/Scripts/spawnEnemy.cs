@@ -11,6 +11,7 @@ public class spawnEnemy : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         Instantiate(Enemy, Spawnpoint.position, Spawnpoint.rotation);
+        Destroy(Enemy, 60f);
 
     }
 
