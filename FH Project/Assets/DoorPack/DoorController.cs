@@ -22,28 +22,36 @@ public class DoorController : MonoBehaviour
             {
                 if (hit.collider.CompareTag("door"))
                 {
-                    var open = hit.collider.transform.GetComponent<Animator>().GetBool("open");
-                    hit.collider.transform.GetComponent<Animator>().SetBool("open", !open);
-                    if(isOpen == false)
+                    bool doorAnswer = false;
+                    doorAnswer = OpenDoorQuiz();
+                    
+                    if(doorAnswer == true)
                     {
-                        int creaksound  =Random.Range(0, 4);
-                        if(creaksound==0)
-                        {
-                            creak0.Play();
-                        }
-                        if (creaksound == 1)
-                        {
-                            creak1.Play();
-                        }
-                        if (creaksound == 2)
-                        {
-                            creak2.Play();
-                        }
-                        if (creaksound == 3)
-                        {
-                            creak3.Play();
-                        }
+                        var open = hit.collider.transform.GetComponent<Animator>().GetBool("open");
+                        hit.collider.transform.GetComponent<Animator>().SetBool("open", !open);
 
+                        //Soll der Sound immer dann kommen, wenn die Tür nicht aufgemacht wurde?
+                        if (isOpen == false)
+                        {
+                            int creaksound = Random.Range(0, 4);
+                            if (creaksound == 0)
+                            {
+                                creak0.Play();
+                            }
+                            if (creaksound == 1)
+                            {
+                                creak1.Play();
+                            }
+                            if (creaksound == 2)
+                            {
+                                creak2.Play();
+                            }
+                            if (creaksound == 3)
+                            {
+                                creak3.Play();
+                            }
+
+                        }
                     }
                 }
 
@@ -51,9 +59,15 @@ public class DoorController : MonoBehaviour
         }
     }
 
-    void OpenDoorQuiz()
+    public bool OpenDoorQuiz()
     {
-
+        Debug.Log("Door opens");
+        /**GameObject quizWindow = GameObject.Find("Canvas/Quiz");
+        QuestionController questionController = quizWindow.GetComponent<QuestionController>();
+        questionController.Show();
+        bool result = questionController.getAnswer();**/
+        bool x = true;
+        return x;
     }
 }
 
