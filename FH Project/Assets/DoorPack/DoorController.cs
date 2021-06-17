@@ -3,11 +3,21 @@ using UnityEngine.UI;
 
 public class DoorController : MonoBehaviour
 {
+
     public bool isOpen = false;
+    public GameObject quizOverlay;
+    private QuestionController questionController;
     public AudioSource creak0;
     public AudioSource creak1;
     public AudioSource creak2;
     public AudioSource creak3;
+
+
+    void Start()
+    {
+        questionController = quizOverlay.GetComponent<QuestionController>();
+    }
+
 
     void Update()
     {
@@ -16,42 +26,23 @@ public class DoorController : MonoBehaviour
             RaycastHit hit;
             //var object = Camera.main.ScreenPointToRay(Input.mousePosition);
             var radius = 10;
-            var selected = Physics.Raycast(Camera.main.ScreenPointToRay(new Vector3(Screen.width/2,Screen.height/2,
+            var selected = Physics.Raycast(Camera.main.ScreenPointToRay(new Vector3(Screen.width / 2, Screen.height / 2,
                     Camera.main.nearClipPlane)), out hit, radius);
             if (selected)
             {
                 if (hit.collider.CompareTag("door"))
                 {
-                    bool doorAnswer = false;
-                    doorAnswer = OpenDoorQuiz();
-                    
-                    if(doorAnswer == true)
+                    //ab hier öffnen der Tür
+                    isOpen = hit.collider.transform.GetComponent<Animator>().GetBool("open");
+
+                    if (isOpen == true)
                     {
-                        var open = hit.collider.transform.GetComponent<Animator>().GetBool("open");
-                        hit.collider.transform.GetComponent<Animator>().SetBool("open", !open);
-
-                        //Soll der Sound immer dann kommen, wenn die Tür nicht aufgemacht wurde?
-                        if (isOpen == false)
-                        {
-                            int creaksound = Random.Range(0, 4);
-                            if (creaksound == 0)
-                            {
-                                creak0.Play();
-                            }
-                            if (creaksound == 1)
-                            {
-                                creak1.Play();
-                            }
-                            if (creaksound == 2)
-                            {
-                                creak2.Play();
-                            }
-                            if (creaksound == 3)
-                            {
-                                creak3.Play();
-                            }
-
-                        }
+                        HideDoorQuiz();
+                        OpenDoor(hit);
+                    }
+                    else
+                    {
+                        isOpen = OpenDoorQuiz(hit);
                     }
                 }
 
@@ -59,16 +50,45 @@ public class DoorController : MonoBehaviour
         }
     }
 
-    public bool OpenDoorQuiz()
+    void OpenDoor(RaycastHit hit)
     {
-        Debug.Log("Door opens");
-        /**GameObject quizWindow = GameObject.Find("Canvas/Quiz");
-        QuestionController questionController = quizWindow.GetComponent<QuestionController>();
-        questionController.Show();
-        bool result = questionController.getAnswer();**/
-        bool x = true;
-        return x;
+        if (isOpen == false)
+        {
+            int creaksound = Random.Range(0, 4);
+            if (creaksound == 0)
+            {
+                creak0.Play();
+            }
+            if (creaksound == 1)
+            {
+                creak1.Play();
+            }
+            if (creaksound == 2)
+            {
+                creak2.Play();
+            }
+            if (creaksound == 3)
+            {
+                creak3.Play();
+            }
+        }
+        hit.collider.transform.GetComponent<Animator>().SetBool("open", true);
+        // "!isOpen" instead of "true" if we want to close doors again
     }
+
+
+    public bool OpenDoorQuiz(RaycastHit hit)
+    {
+        questionController.Show(hit);
+
+        return isOpen;
+    }
+
+    void HideDoorQuiz()
+    {
+        questionController.Hide();
+    }
+
 }
 
 

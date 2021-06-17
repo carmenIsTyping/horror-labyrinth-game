@@ -8,16 +8,14 @@ public class QuestionController : MonoBehaviour
 
     public List<QuestionsAndAnswers> QnA;
 
-    public string answer;
+    public string userInput;
+    public Text inputField;
     public Text questionTxt;
-    public GameObject inputField;
-    public int currentQuestion;
-    public string currentAnswer;
+    private RaycastHit door;
 
-    public void Start()
-    {
-        Show();
-    }
+    public int currentQuestion;
+    public string currentAnswer = "Hallo";
+
     private void Awake()
     {
         Hide();
@@ -25,38 +23,49 @@ public class QuestionController : MonoBehaviour
 
     public void StoreAnswer()
     {
-        answer = inputField.GetComponent<Text>().text;
+        userInput = inputField.GetComponent<Text>().text;
+        getAnswer();
     }
 
     void generateQuestion()
     {
         currentQuestion = Random.Range(0, QnA.Count);
         questionTxt.text = QnA[currentQuestion].Question;
+        Debug.Log("Generated Question: " + currentQuestion);
     }
 
-    public void Show()
+    public void Show(RaycastHit hit)
     {
+        Debug.Log("Showing QuestionController Window");
         Time.timeScale = 0f;
         gameObject.SetActive(true);
-        generateQuestion();
+        Cursor.lockState = CursorLockMode.None;
+        door = hit;
+        //generateQuestion();
     }
 
     public void Hide()
     {
+        Cursor.lockState = CursorLockMode.Locked;
         Time.timeScale = 1f;
         gameObject.SetActive(false);
     }
 
     public bool getAnswer()
-    {
-        StoreAnswer();
-
-        if(answer == currentAnswer)
+    { 
+        if (string.Compare(userInput, currentAnswer) == 0);
         {
+            door.collider.transform.GetComponent<Animator>().SetBool("open", true);
             Hide();
             return true;
         }
+        WrongAnswer();
         return false;
+    }
+
+    public void WrongAnswer()
+    {
+        Debug.Log("Wrong Answer stuff here");
     }
 
     /**
