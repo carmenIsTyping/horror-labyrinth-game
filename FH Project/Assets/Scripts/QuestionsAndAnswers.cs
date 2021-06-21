@@ -3,7 +3,9 @@
 public class QuestionsAndAnswers
 {
     public string Question;
-    public string[] Answers;
-    public int CorrectAnswer;
+    public string Answer; //[] on multiple choice quizes
+
+    //public int correctAnswer - mulitple choice
+
 
 }

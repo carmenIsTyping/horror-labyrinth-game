@@ -28,7 +28,6 @@ public class PauseMenu : MonoBehaviour
 
     public void Resume()
     {
-        Debug.Log("Resumed");
         pauseMenuUI.SetActive(false);
         crossHair.SetActive(true);
         Time.timeScale = 1f;

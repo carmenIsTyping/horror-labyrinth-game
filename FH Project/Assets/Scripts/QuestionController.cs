@@ -13,7 +13,7 @@ public class QuestionController : MonoBehaviour
     public Text questionTxt;
     private RaycastHit door;
 
-    public int currentQuestion;
+    public static int randIndex;
     public string currentAnswer = "Hallo";
 
     private void Awake()
@@ -29,19 +29,20 @@ public class QuestionController : MonoBehaviour
 
     void generateQuestion()
     {
-        currentQuestion = Random.Range(0, QnA.Count);
-        questionTxt.text = QnA[currentQuestion].Question;
-        Debug.Log("Generated Question: " + currentQuestion);
+        randIndex = Random.Range(0, QnA.Count);
+        questionTxt.text = QnA[randIndex].Question;
     }
 
     public void Show(RaycastHit hit)
     {
-        Debug.Log("Showing QuestionController Window");
         Time.timeScale = 0f;
-        gameObject.SetActive(true);
         Cursor.lockState = CursorLockMode.None;
         door = hit;
-        //generateQuestion();
+        if (gameObject.activeSelf == false)
+        {
+            generateQuestion();
+        }
+        gameObject.SetActive(true);
     }
 
     public void Hide()
@@ -51,21 +52,21 @@ public class QuestionController : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-    public bool getAnswer()
-    { 
-        if (string.Compare(userInput, currentAnswer) == 0);
+    public void getAnswer()
+    {
+        if (string.Compare(userInput, QnA[randIndex].Answer) == 0)
         {
             door.collider.transform.GetComponent<Animator>().SetBool("open", true);
             Hide();
-            return true;
+        }else
+        {
+            WrongAnswer();
         }
-        WrongAnswer();
-        return false;
     }
 
     public void WrongAnswer()
     {
-        Debug.Log("Wrong Answer stuff here");
+        //inputField.color = Color.red;
     }
 
     /**
