@@ -14,7 +14,7 @@ public class QuestionController : MonoBehaviour
     private RaycastHit door;
 
     public static int randIndex;
-    public string currentAnswer = "Hallo";
+    private string currentAnswer = "";
 
     private void Awake()
     {
@@ -66,7 +66,7 @@ public class QuestionController : MonoBehaviour
 
     public void WrongAnswer()
     {
-        //inputField.color = Color.red;
+        inputField.color = Color.red;
     }
 
     /**
