@@ -10,7 +10,7 @@ public class flashlight2 : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F))
+        if (Input.GetKeyDown(KeyCode.Q))
         {
             if (Light.enabled == true)
             {
