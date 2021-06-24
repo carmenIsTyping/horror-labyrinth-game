@@ -9,11 +9,8 @@ public class followpath : MonoBehaviour
     public float speed;
     private int current;
     public Transform player;
-    public bool isChasing;
-
+    //public bool isChasing;
     Animator anim;
-
-
 
     private void Awake()
     {
@@ -23,8 +20,8 @@ public class followpath : MonoBehaviour
 
     private void Start()
     {
-        anim = GameObject.Find("Mesh").GetComponent<Animator>();
-        
+        //find child in parent, mesh is verwirrt weils mehrere "Mesh" gibt
+        anim = transform.Find("Mesh").GetComponent<Animator>();
     }
 
     void Update()
@@ -32,15 +29,13 @@ public class followpath : MonoBehaviour
         //Check for sight
         Vector3 targetDirection = player.position - transform.position;
         float angle = Vector3.Angle(targetDirection, transform.forward);
-        if(angle < 45.0f){
-            isChasing = true;
-            speed = 8.0f;
+        if(angle < 20.0f){
+            speed = 5.0f;
             anim.SetBool("isChasing", true);
         }
         else
         {
-            isChasing = false;
-            speed = 2f;  
+            speed = 2.0f;  
             anim.SetBool("isChasing", false); 
         }
         Patrolling();
