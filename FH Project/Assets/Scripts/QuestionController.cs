@@ -57,6 +57,7 @@ public class QuestionController : MonoBehaviour
         if (string.Compare(userInput, QnA[randIndex].Answer) == 0)
         {
             door.collider.transform.GetComponent<Animator>().SetBool("open", true);
+            inputField.color = Color.black;
             Hide();
         }else
         {
